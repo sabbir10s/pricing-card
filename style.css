@@ -22,7 +22,7 @@
 
     /* font-size (h2,h3,paragraph */
     --fs-2: 5rem;
-    --fs-3: 3rem;
+    --fs-3: 1rem;
     --fs-p: 1rem;
 
     /* color  */
@@ -40,4 +40,91 @@
 
     /* border-radius */
     --br: 5px;
+}
+
+body {
+    font-family: var(--ff);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+.pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: var(--spacer-lg);
+}
+
+h2 {
+    font-size: var(--fs-2);
+    font-weight: var(--fw-b);
+}
+
+p {
+    font-size: var(--fs-p);
+    margin: 0 0 var(--spacer);
+}
+
+strong {
+    font-weight: var(--fw-m);
+}
+
+.card {
+    box-shadow: var(--shadow);
+    border-radius: var(--br);
+    overflow: hidden;
+}
+
+.card__title {
+    background-color: var(--primary-clr);
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    padding: var(--spacer) 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: var(--fw-m);
+    font-size: var(--fs-3);
+    letter-spacing: 2px;
+
+}
+
+.card__price {
+    color: var(--primary-clr);
+    font-size: 2rem;
+    font-weight: var(--fw-b);
+    margin: 0;
+    padding: 1em var(--spacer-lg);
+}
+
+.card__price span {
+    font-size: var(--fs-p);
+    font-weight: var(--fw-n);
+}
+
+.card__body {
+    padding: 0 var(--spacer-lg) 2em;
+}
+
+.card__important {
+    --primary-clr: var(--accent-clr);
+}
+
+.button {
+    background-color: var(--primary-clr);
+    color: white;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: var(--br);
+    font-weight: var(--fw-b);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card__button {
+    margin-top: var(--spacer-md);
 }

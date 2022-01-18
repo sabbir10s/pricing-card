@@ -1,0 +1,43 @@
+/* ========google font ========== */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;600;800&display=swap');
+
+/* color palette */
+/* https: //coolors.co/adf5ff-ef6461-171219-225560-edf060 */
+
+* {
+    box-sizing: border-box;
+}
+
+/* =================
+    Variables
+================ */
+:root {
+    /* Font font-family-(FF) */
+    --ff: 'Fira Sans', sans-serif;
+
+    /* font-weight (normal, medium, bold) */
+    --fw-n: 300;
+    --fw-m: 600;
+    --fw-b: 800;
+
+    /* font-size (h2,h3,paragraph */
+    --fs-2: 5rem;
+    --fs-3: 3rem;
+    --fs-p: 1rem;
+
+    /* color  */
+    --primary-clr: #225560;
+    --secondary-clr: #36213E;
+    --secondary-clr-light: #554971;
+    --accent-clr: #EF6461;
+
+    /* For padding and margin (medium, large)  */
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer)*2);
+    --spacer-lg: calc(var(--spacer)*3);
+
+    --shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+
+    /* border-radius */
+    --br: 5px;
+}
